@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/Users/shtosti/Dropbox/study/UZH/SS23/Machine_Translation/exercises/mt_2023_exercise_4/joeynmt/joeynmt/__main__.py", line 3, in <module>
+    from joeynmt.prediction import test, translate
+  File "/Users/shtosti/Dropbox/study/UZH/SS23/Machine_Translation/exercises/mt_2023_exercise_4/joeynmt/joeynmt/prediction.py", line 34, in <module>
+    from joeynmt.metrics import bleu, chrf, sequence_accuracy, token_accuracy
+  File "/Users/shtosti/Dropbox/study/UZH/SS23/Machine_Translation/exercises/mt_2023_exercise_4/joeynmt/joeynmt/metrics.py", line 9, in <module>
+    from sacrebleu.metrics import BLEU, CHRF
+  File "/Users/shtosti/Dropbox/study/UZH/SS23/Machine_Translation/exercises/mt_2023_exercise_4/mt-exercise-4/venvs/torch3/lib/python3.10/site-packages/sacrebleu/__init__.py", line 21, in <module>
+    from .utils import smart_open, SACREBLEU_DIR, download_test_set  # noqa: F401
+  File "/Users/shtosti/Dropbox/study/UZH/SS23/Machine_Translation/exercises/mt_2023_exercise_4/mt-exercise-4/venvs/torch3/lib/python3.10/site-packages/sacrebleu/utils.py", line 597, in <module>
+    from .dataset import DATASETS, SUBSETS, DOMAINS, COUNTRIES
+  File "/Users/shtosti/Dropbox/study/UZH/SS23/Machine_Translation/exercises/mt_2023_exercise_4/mt-exercise-4/venvs/torch3/lib/python3.10/site-packages/sacrebleu/dataset/__init__.py", line 73, in <module>
+    from .wmt_xml import WMTXMLDataset
+  File "/Users/shtosti/Dropbox/study/UZH/SS23/Machine_Translation/exercises/mt_2023_exercise_4/mt-exercise-4/venvs/torch3/lib/python3.10/site-packages/sacrebleu/dataset/wmt_xml.py", line 3, in <module>
+    import lxml.etree as ET
+ImportError: dlopen(/Users/shtosti/Dropbox/study/UZH/SS23/Machine_Translation/exercises/mt_2023_exercise_4/mt-exercise-4/venvs/torch3/lib/python3.10/site-packages/lxml/etree.cpython-310-darwin.so, 0x0002): symbol not found in flat namespace (_exsltDateXpathCtxtRegister)
