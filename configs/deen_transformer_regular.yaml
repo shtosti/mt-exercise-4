@@ -55,9 +55,8 @@ training:
     validation_freq: 500
     logging_freq: 100
     eval_metric: ["bleu"]
-    model_name: "layernorm_pre"
-    model_dir: "models/layernorm_post"
-#     model_dir: "models/deen_transformer_pre" 
+    model_name: "deen_transformer_post"
+    model_dir: "models/deen_transformer_post"
     overwrite: False
     shuffle: True
     use_cuda: False
