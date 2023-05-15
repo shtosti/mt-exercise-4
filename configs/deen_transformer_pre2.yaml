@@ -55,8 +55,8 @@ training:
     validation_freq: 500
     logging_freq: 100
     eval_metric: ["bleu"]
-    model_name: "deen_transformer_post"
-    model_dir: "models/deen_transformer_post"
+    model_name: "deen_transformer_pre2"
+    model_dir: "models/deen_transformer_pre2"
     overwrite: False
     shuffle: True
     use_cuda: False
