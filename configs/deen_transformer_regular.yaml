@@ -56,7 +56,7 @@ training:
     logging_freq: 100
     eval_metric: ["bleu"]
     model_name: "layernorm_pre"
-    model_dir: "models/{model_name}"
+    model_dir: "models/layernorm_post"
 #     model_dir: "models/deen_transformer_pre" 
     overwrite: False
     shuffle: True
