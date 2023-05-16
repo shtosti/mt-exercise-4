@@ -40,3 +40,18 @@ Train a model:
     ./scripts/train.sh
 
 The training process can be interrupted at any time, and the best checkpoint will always be saved. It is also possible to continue training from there later on.
+
+
+# Evaluation steps
+
+The log files are manually added to this directory: 
+    
+    mt-exercise-4/perplexities/
+
+Run this program to extract and inspect the perplexities score per log file:
+
+    mt-exercise-4/perplexities/extract_ppl.py
+  
+Or run this program to extract perplexities from all log files and output a table and a line plot:
+
+    mt-exercise-4/perplexities/create_table.py
