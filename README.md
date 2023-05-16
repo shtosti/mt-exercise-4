@@ -1,4 +1,5 @@
 # MT Exercise 4: Layer Normalization for Transformer Models
+----
 
 This repo is a collection of scripts showing how to install [JoeyNMT](https://github.com/joeynmt/joeynmt), download
 data and train & evaluate models, as well as the necessary data for training your own model
