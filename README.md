@@ -17,6 +17,10 @@ data and train & evaluate models, as well as the necessary data for training you
 Clone this repository or your fork thereof in the desired place:
 
     git clone https://github.com/moritz-steiner/mt-exercise-4
+    
+NB: clone to a directory outside of the exercise repository! Clone joeynmt or a fork thereof:
+
+    git clone https://github.com/moritz-steiner/joeynmt-hotfixed
 
 Create a new virtualenv that uses Python 3. Please make sure to run this command outside of any virtual Python environment:
 
