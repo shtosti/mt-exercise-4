@@ -41,10 +41,11 @@ df.insert(0, "Step", steps)
 
 df.to_csv('perplexity_results.csv', index=False)
 
-# create a line chart based on the df
+# create a line chart based on the df (for all 4 models)
 plt.plot(df['Step'], df['baseline.log'], label='baseline', color='#FF00FF') 
 plt.plot(df['Step'], df['post.log'], label='post', color = "#FFFF00")
 plt.plot(df['Step'], df['pre.log'], label='pre', color = "#009999")
+plt.plot(df['Step'], df['pre2.log'], label='pre2', color = "#FF0000")
 plt.xlabel('Step')
 plt.ylabel('Ppl')
 plt.legend()
@@ -52,4 +53,19 @@ plt.savefig('perplexity_results.png')
 plt.show()
 
 
+plt.plot(df['Step'], df['baseline.log'], label='baseline', color='#FF00FF') 
+plt.plot(df['Step'], df['post.log'], label='post', color = "#FFFF00")
+plt.xlabel('Step')
+plt.ylabel('Ppl')
+plt.legend()
+plt.savefig('perplexity_results_post.png')
+plt.show()
 
+
+plt.plot(df['Step'], df['baseline.log'], label='baseline', color='#FF00FF') 
+plt.plot(df['Step'], df['pre.log'], label='pre', color = "#009999")
+plt.xlabel('Step')
+plt.ylabel('Ppl')
+plt.legend()
+plt.savefig('perplexity_results_pre.png')
+plt.show()
